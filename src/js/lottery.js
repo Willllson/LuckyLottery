@@ -123,10 +123,10 @@ App = {
         var transform = preTransform();
 
         awards.forEach(function(v, i, a) {
-            // 分隔线
+            // line
             lineListHtml.push('<li class="gb-wheel-litem" style="' + transform + ': rotate('+ (i * turnNum + turnNum / 2) +'turn)"></li>');
 
-            // 奖项
+            // prize
             itemListHtml.push('<div class="gb-wheel-item">');
             itemListHtml.push('<div class="gb-wheel-icontent" style="' + transform + ': rotate('+ (i * turnNum) +'turn)">');
             itemListHtml.push('<p class="gb-wheel-iicon">');
@@ -148,7 +148,7 @@ App = {
         };
 
 
-        // 旋转
+        // rotate
         var i = 0;
         $('gbLottery').onclick = function() {
             i++;
@@ -157,7 +157,6 @@ App = {
 
         // console.log(preTransform());
 
-        // transform兼容
         function preTransform() {
            var cssPrefix,
            vendors = {
@@ -170,7 +169,6 @@ App = {
            testEle = document.createElement('p'),
            cssSupport = {};
 
-            // 嗅探特性
            Object.keys(vendors).some(function(vendor) {
                if (testEle.style[vendor + (vendor ? 'T' : 't') + 'ransform'] !== undefined) {
                  cssPrefix = vendor ? '-' + vendor.toLowerCase() + '-' : '';
@@ -179,7 +177,6 @@ App = {
            });
 
          /**
-          * [兼容CSS前缀]
           * @param  {[type]} name [description]
           * @return {[type]}      [description]
           */
@@ -208,7 +205,6 @@ App = {
         testEle = document.createElement('p'),
         cssSupport = {};
 
-         // 嗅探特性
         Object.keys(vendors).some(function(vendor) {
             if (testEle.style[vendor + (vendor ? 'T' : 't') + 'ransform'] !== undefined) {
               cssPrefix = vendor ? '-' + vendor.toLowerCase() + '-' : '';
@@ -217,7 +213,6 @@ App = {
         });
 
         /**
-         * [兼容CSS前缀]
          * @param  {[type]} name [description]
          * @return {[type]}      [description]
          */
