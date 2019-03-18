@@ -137,7 +137,7 @@ App = {
         return cssSupport.transform;
     },
 
-    castVote: function() {
+    draw: function() {
         var gbWheel = document.getElementById('gbWheel');
         var drawamount = document.getElementById('drawamount');
         //this i is a random number should be returned by contract
