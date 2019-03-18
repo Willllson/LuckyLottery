@@ -4,7 +4,7 @@ html {
 }
 
 
-/* 转盘 */
+/* turnable */
 
 .gb-wheel-container ul,
 .gb-wheel-container li,
@@ -125,7 +125,7 @@ html {
 }
 
 
-/* 按钮*/
+/* button*/
 
 .gb-wheel-btn {
     position: absolute;
@@ -176,7 +176,6 @@ a.gb-wheel-btn {
 }
 
 
-/* 媒体查询*/
 
 @media only screen and (min-width: 320px) {
     html {
